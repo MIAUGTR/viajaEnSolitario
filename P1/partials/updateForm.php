@@ -1,6 +1,6 @@
 <main>
     <h1>Modifica usuario </h1>
-    <form class="fom_usuario" action="?action=update" method="POST">
+    <form class="fom_usuario" action="?action=modify" method="POST">
 
         <!-- Saca los datos de la BBDD y los mete en el formulario -->
 

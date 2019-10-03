@@ -44,6 +44,9 @@ switch ($action) {
         $central = "/borrar.php";
         break;
     case "update":
+        $central = "/../partials/updateForm.php";
+        break;
+    case "modify":
         $central = "/update.php";
         break;
     default:

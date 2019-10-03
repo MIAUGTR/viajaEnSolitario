@@ -18,7 +18,7 @@ $table="A_cliente";
 
 try {
 
-    $values = array($_REQUEST['client_id'], $_REQUEST['userName'], $_REQUEST['lastName'], $_REQUEST['email'], $_REQUEST['dni'], $_REQUEST['passwd'], $_REQUEST['fotoFile']);
+    $values = array($_REQUEST['userName'], $_REQUEST['lastName'], $_REQUEST['email'], $_REQUEST['dni'], $_REQUEST['passwd'], $_REQUEST['fotoFile'], $_REQUEST['clientId']);
     update($pdo, $table, $values);
 
     echo "Éxito al modificar";

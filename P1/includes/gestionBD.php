@@ -27,9 +27,9 @@ function consultaPorId ($pdo, $table, $id) {
 }
 
 function update ($pdo, $table, $values){
-    $query = "UPDATE $table SET nombre = ?, apellidos = ?, email= ?, dni = ?, clave = ?,  foto_file = ? WHERE client_id=? ";
+    $query = "UPDATE $table SET nombre = ?, apellidos = ?, email= ?, dni = ?, clave = ?, foto_file = ? WHERE client_id = ?";
     $consulta = $pdo->prepare($query);
-    $a=$consulta->execute(array($values));
+    $a = $consulta->execute($values);
     if (1>$a)echo "InCorrecto";
 }
 
