@@ -2,7 +2,7 @@
 
 /**
  * @title: update.php
- * @description: modifica eb la BBDD el cliente  que coincide con el id pasado
+ * @description: modifica en la BBDD el cliente  que coincide con el id pasado
  * @author: Marius Mladinovici Danaila <al315550@uji.es>
  * @license CC-BY-NC-SA
  */
