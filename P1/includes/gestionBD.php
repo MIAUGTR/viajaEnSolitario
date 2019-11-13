@@ -17,6 +17,22 @@ function borrar($pdo,$table,$valor) {
                      
 }
 
+function consultaPorId ($pdo, $table, $id) {
+    $query = "SELECT * FROM $table WHERE client_id = (?)";
+    $consulta = $pdo->prepare($query);
+    $a = $consulta->execute(array($id));
+    if (1>$a)echo "InCorrecto consultaPorId";
+    return ($consulta->fetchAll(PDO::FETCH_ASSOC));
+
+}
+
+function update ($pdo, $table, $values){
+    $query = "UPDATE $table SET nombre = ?, apellidos = ?, email= ?, dni = ?, clave = ?, foto_file = ? WHERE client_id = ?";
+    $consulta = $pdo->prepare($query);
+    $a = $consulta->execute($values);
+    if (1>$a)echo "InCorrecto";
+}
+
 function consultar($pdo,$table) {
     $query = "SELECT     * FROM       $table "; 
     $consult = $pdo->prepare($query);
